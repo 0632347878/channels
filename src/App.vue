@@ -20,4 +20,17 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+.btn {
+  margin: 5px 0;
+  padding: 5px 10px;
+  background: transparent;
+  border: 1px solid #666666;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+.btn--error {
+  color: red;
+  border-color: red;
+}
 </style>
