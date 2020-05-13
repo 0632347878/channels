@@ -6,7 +6,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const bodyParser = require('body-parser');
 
-const db = new DB("sqlitedb")
+const db = new DB("sqlitedb");
 const app = express();
 const router = express.Router();
 
@@ -19,9 +19,9 @@ const allowCrossDomain = function(req, res, next) {
   res.header('Access-Control-Allow-Methods', '*');
   res.header('Access-Control-Allow-Headers', '*');
   next();
-}
+};
 
-app.use(allowCrossDomain)
+app.use(allowCrossDomain);
 
 router.post('/register', function(req, res) {
   db.insert([
@@ -94,9 +94,9 @@ router.post('/login', (req, res) => {
       user: user
     });
   });
-})
+});
 
-app.use(router)
+app.use(router);
 
 let port = process.env.PORT || 3000;
 
