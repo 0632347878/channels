@@ -8,8 +8,14 @@
 # install dependencies
 npm install
 
+# Compatibility
+For compatibility use node.js v12.10
+
+# run Express server listening on port 3000
+`npm run server`
+
 # serve with hot reload at localhost:8080
-npm run dev
+`npm run dev` in additional terminal tab
 
 # build for production with minification
 npm run build
