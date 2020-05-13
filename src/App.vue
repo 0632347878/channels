@@ -2,12 +2,15 @@
   <div id="app">
     <img src="./assets/logo.png">
     <router-view/>
+    <loader/>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
+  import Loader from "./components/Loader";
+  export default {
+  name: 'App',
+  components: {Loader}
 }
 </script>
 
@@ -32,5 +35,38 @@ export default {
 .btn--error {
   color: red;
   border-color: red;
+}
+.btn--search {
+  border: 1px solid rgba(102, 102, 102, 0.2);
+  min-height: 43px;
+  margin: 0;
+}
+
+ table,
+ thead,
+ tbody,
+ tfoot,
+ tr,
+ th,
+ td {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-collapse: inherit;
+  border-spacing: 0;
+  border-color: inherit;
+  vertical-align: inherit;
+  text-align: left;
+  font-weight: inherit;
+  -webkit-border-horizontal-spacing: 0;
+  -webkit-border-vertical-spacing: 0;
+}
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
 }
 </style>
